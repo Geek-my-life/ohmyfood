@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* font */
+@font-face {
+  font-family: roboto-regular;
+  src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(../font/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: shrikhand;
+  src: url(../font/Shrikhand-Regular.ttf);
+}
+@keyframes open {
+  0% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+  70% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(0px);
+    opacity: 0%;
+  }
+  to {
+    transform: translate(-1000%);
+    opacity: 0%;
+  }
+}
+@keyframes loadingbar {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+@keyframes degrade {
+  0% {
+    opacity: 0;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px black;
+  }
+  100% {
+    opacity: 100%;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px black;
+  }
+}
+@keyframes degrade {
+  0% {
+    opacity: 0;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px black;
+  }
+  100% {
+    opacity: 100%;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px black;
+  }
+}
+@keyframes fadein {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  max-width: 738px;
+  margin: auto;
+  font-family: roboto-regular;
+}
+body .open {
+  animation: open 2500ms forwards;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .open img {
+  width: 70%;
+}
+body .open .loadbar {
+  margin-top: 20px;
+  animation: loadingbar 3s;
+  width: 70%;
+  height: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+body header nav {
+  width: 100%;
+}
+body header nav a {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header nav a img {
+  width: 50%;
+  margin: auto;
+}
+body header nav .adress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header nav .adress i {
+  font-size: 18px;
+  width: 30%;
+  text-align: right;
+  padding: 2%;
+}
+body header nav .adress input {
+  background-color: hsla(0deg, 0%, 83%, 0);
+  border-style: none;
+  font-size: 18px;
+  padding: 2%;
+}
+body main .banniere {
+  padding: 50px 0 60px 0;
+  text-align: center;
+  background-color: hsla(0deg, 0%, 83%, 0.1);
+  height: 300px;
+}
+body main .banniere h1 {
+  margin: 0 auto 20px auto;
+  width: 80%;
+  font-family: roboto-bold;
+  font-size: 30px;
+}
+body main .banniere p {
+  margin: 0 auto 60px auto;
+  width: 90%;
+  font-size: 20px;
+}
+body main .banniere a {
+  width: 70%;
+  padding: 5%;
+  font-size: 18px;
+  color: white;
+  border-radius: 30px;
+  border-style: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 2px 2px 2px 2px hsla(0deg, 0%, 83%, 0.5);
+}
+body main .banniere a:hover {
+  background: linear-gradient(hsl(317deg, 100%, 84%), hsl(267deg, 66%, 70%));
+  box-shadow: 2px 2px 2px 2px hsl(0deg, 0%, 83%);
+}
+body main .block {
+  padding: 40px 4%;
+}
+body main .block h2 {
+  font-size: 28px;
+  font-family: roboto-bold;
+  padding: 30px 0;
+}
+body main .block .list {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 80px;
+}
+body main .block .list h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: roboto-bold;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(65%);
+}
+body main .block .list .listdetail {
+  margin: 0 0 0 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 92%;
+  background-color: hsla(0deg, 0%, 83%, 0.1);
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px 1px hsla(0deg, 0%, 83%, 0.2);
+}
+body main .block .list .listdetail i {
+  width: 20%;
+  font-size: 26px;
+  margin: auto;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+body main .block .list .listdetail p {
+  color: black;
+  text-align: left;
+  width: 80%;
+  margin: auto 0 auto 10px;
+  font-family: roboto-bold;
+  font-size: 18px;
+}
+body main .block .list .listdetail:hover {
+  background-color: hsla(267deg, 66%, 60%, 0.2);
+  color: #9356DC;
+}
+body main .block .restocard a {
+  border-radius: 30px;
+}
+body main .block .restocard .resto {
+  margin: 20px 0;
+  width: 100%;
+  height: 280px;
+  background-color: hsla(0deg, 0%, 83%, 0.1);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px hsla(0deg, 0%, 83%, 0.4);
+}
+body main .block .restocard .resto img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 200px;
+}
+body main .block .restocard .resto h5 {
+  font-weight: normal;
+  color: black;
+  padding: 5px 10px;
+  position: absolute;
+  transform: translate(240%, -550%);
+  background-color: #99E2D0;
+  font-size: 20px;
+  font-family: roboto-regular;
+}
+body main .block .restocard .resto .restotxt {
+  margin: 5px 10px;
+}
+body main .block .restocard .resto .restotxt h4 {
+  font-size: 22px;
+  color: black;
+}
+body main .block .restocard .resto .restotxt p {
+  font-size: 22px;
+  color: black;
+}
+body main .block .restocard .resto .restotxt .restocheck input {
+  display: none;
+}
+body main .block .restocard .resto .restotxt .restocheck input:checked + .check i {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px black;
+  animation: degrade 2s forwards;
+}
+body main .block .restocard .resto .restotxt .restocheck .check {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  transform: translate(700%, -100%);
+}
+body main .block .restocard .resto .restotxt .restocheck .check i {
+  font-size: 26px;
+  -webkit-text-stroke: 1px black;
+  background-color: white;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body footer {
+  background-color: hsla(0deg, 0%, 0%, 0.7);
+  margin-top: 30px;
+  padding: 40px 4%;
+}
+body footer img {
+  width: 40%;
+}
+body footer .footmenu {
+  padding: 20px 0px;
+  line-height: 30px;
+}
+body footer .footmenu a {
+  font-size: 20px;
+  color: white;
+}
+body footer .footmenu .foottxt {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+body footer .footmenu .foottxt i {
+  width: 30px;
+  font-size: 20px;
+  color: white;
+}
+body footer .footmenu .foottxt a {
+  font-size: 20px;
+  color: white;
+}
+
+@media only screen and (min-width: 738px) {
+  body {
+    max-width: 1000px;
+  }
+  body .open {
+    width: 100%;
+  }
+  body .open img {
+    width: 40%;
+  }
+  body header nav a img {
+    width: 30%;
+  }
+  body header nav .adress {
+    margin-left: -20%;
+  }
+  body main .banniere a {
+    width: 70%;
+    padding: 2% 5%;
+    font-size: 18px;
+  }
+  body main .block .list h6 {
+    transform: translate(65%, 65%);
+  }
+  body main .block .restocard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body main .block .restocard a {
+    width: 45%;
+  }
+  body footer img {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    padding: 0 10px;
+    max-width: 1400px;
+  }
+  body .open {
+    width: 1400px;
+  }
+  body .open img {
+    width: 20%;
+  }
+  body header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body header nav a {
+    justify-content: flex-start;
+  }
+  body header nav a img {
+    width: 50%;
+    margin: 0px;
+  }
+  body main .banniere a {
+    padding: 2% 5%;
+  }
+  body main .block {
+    padding: 40px 0px;
+  }
+  body main .block .blockfonction {
+    display: flex;
+    justify-content: space-between;
+  }
+  body main .block .list {
+    width: 30%;
+  }
+  body main .block .list h6 {
+    transform: translateY(65%);
+  }
+  body main .block .restocard .resto img {
+    object-fit: cover;
+  }
+  body main .block .restocard .resto h5 {
+    transform: translate(500%, -550%);
+  }
+  body main .block .restocard .resto .restotxt .restocheck .check {
+    transform: translate(1300%, -100%);
+  }
+  body footer img {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  body main .block .restocard .resto h5 {
+    transform: translate(300%, -550%);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,71 @@
+@keyframes open {
+    0% { 
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+    70% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+    80% {
+        transform: translateX(0px);
+        opacity: 0%;
+    }
+    to {
+        transform: translate(-1000%);
+        opacity: 0%;
+    }
+}
+@keyframes loadingbar {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+@keyframes degrade {
+    0% {
+        opacity: 0;
+        background: linear-gradient(#FF79DA, #9356DC);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px black;
+    }
+    100% {
+        opacity: 100%;
+        background: linear-gradient(#FF79DA, #9356DC);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px black;
+    }
+}
+@keyframes degrade {
+    0% {
+        opacity: 0;
+        background: linear-gradient(#FF79DA, #9356DC);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px black;
+    }
+    100% {
+        opacity: 100%;
+        background: linear-gradient(#FF79DA, #9356DC);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px black;
+    }
+}
+@keyframes fadein {
+    from {
+        transform: translateY(20%);
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
