@@ -1,61 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-img {
-    max-width: 100%;
-}
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-}
-/* font */
-@font-face {
-    font-family: roboto-regular;
-    src: url(../font/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: roboto-bold;
-    src: url(../font/Roboto-Bold.ttf);
-}
-@font-face {
-    font-family: shrikhand;
-    src: url(../font/Shrikhand-Regular.ttf);
-}
-@import "./animation.scss";
 
 body {
     max-width: 738px;
     margin: auto;
     font-family: roboto-regular;
-    header {
-        nav {
-            a {
-                padding: 3% 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                i {
-                    position: absolute;
-                    transform: translateX(-400%);
-                    width: 10%;
-                    font-size: 24px;
-                    color: black;
-                }
-                img {
-                    box-shadow: 1px 1px 1px 1px hsl(0, 0%, 83%, 0.2);
-                    display: flex;
-                    justify-content: center;
-                    width: 50%;
-                }
-            }        
-        }    
-    }
     main {
-        .banniere {
+        .banniere_menu {
             height: 240px;
             img {
                 height: 100%;
@@ -210,7 +159,7 @@ body {
     }
     footer {
         background-color: hsl(0, 0%, 0%, 0.7);
-        margin-top: 50px;
+        margin-top: 30px;
         padding: 40px 4%;
         img {
             width: 40%;
@@ -237,7 +186,7 @@ body {
                 }    
             }
         }    
-    }   
+    }       
 }
 @media only screen and (min-width: 738px) {
     body {

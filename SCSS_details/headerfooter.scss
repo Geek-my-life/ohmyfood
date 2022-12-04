@@ -1,0 +1,87 @@
+.header_acc {
+    .nav_acc {
+        width: 100%;
+        a {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50%;
+                margin: auto;
+            }
+        }
+        .adress {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                i {
+                    font-size: 18px;
+                    width: 30%;
+                    text-align: right;
+                    padding: 2%;
+                }
+                input {
+                    background-color: hsl(0, 0%, 83%, 0);
+                    border-style: none;
+                    font-size: 18px;
+                    padding: 2%;
+                }
+        }
+    }        
+}
+
+.menu_head {
+    .menu_nav {
+        a {
+            padding: 3% 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                position: absolute;
+                transform: translateX(-400%);
+                width: 10%;
+                font-size: 24px;
+                color: black;
+            }
+            img {
+                box-shadow: 1px 1px 1px 1px hsl(0, 0%, 83%, 0.2);
+                display: flex;
+                justify-content: center;
+                width: 50%;
+            }
+        }        
+    }    
+}
+
+footer {
+    background-color: hsl(0, 0%, 0%, 0.7);
+    margin-top: 30px;
+    padding: 40px 4%;
+    img {
+        width: 40%;
+    }
+    .footmenu {
+        padding: 20px 0px;
+        line-height: 30px;
+        a {
+            font-size: 20px;
+            color: white;
+        }           
+        .foottxt {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            i {
+                width: 30px;
+                font-size: 20px;
+                color: white;
+            }
+            a {
+                font-size: 20px;
+                color: white;
+            }    
+        }
+    }    
+}       
