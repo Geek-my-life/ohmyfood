@@ -21,9 +21,41 @@
             animation: loadingbar 3s;
             width: 70%;
             height: 30px;
-            background: var(--gradient-color);
+            background: $gradient-color;
         }    
     }
+    .header_acc {
+        .nav_acc {
+            width: 100%;
+            a {
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 50%;
+                    margin: auto;
+                }
+            }
+            .adress {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    i {
+                        font-size: 18px;
+                        width: 30%;
+                        text-align: right;
+                        padding: 2%;
+                    }
+                    input {
+                        background-color: hsl(0, 0%, 83%, 0);
+                        border-style: none;
+                        font-size: 18px;
+                        padding: 2%;
+                    }
+            }
+        }        
+    }    
     main {
         .banniere {
             padding: 50px 0 60px 0;
@@ -48,7 +80,7 @@
                 color: white;
                 border-radius: 30px;
                 border-style: none;
-                background: var(--gradient-color);
+                background: $gradient-color;
                 box-shadow: 2px 2px 2px 2px hsl(0, 0%, 83%, 0.5);
                 &:hover {
                     opacity: 0.8;
@@ -134,7 +166,7 @@
                         padding: 5px 10px;
                         position: absolute;
                         transform: translate(240%,-550%);
-                        background-color: var(--new-color);
+                        background-color: $new-color;
                         font-size: 20px;
                         font-family: roboto-regular;
                     }
@@ -182,6 +214,36 @@
     
         }
     } 
+    footer {
+        background-color: hsl(0, 0%, 0%, 0.7);
+        margin-top: 30px;
+        padding: 40px 4%;
+        img {
+            width: 40%;
+        }
+        .footmenu {
+            padding: 20px 0px;
+            line-height: 30px;
+            a {
+                font-size: 20px;
+                color: white;
+            }           
+            .foottxt {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                i {
+                    width: 30px;
+                    font-size: 20px;
+                    color: white;
+                }
+                a {
+                    font-size: 20px;
+                    color: white;
+                }    
+            }
+        }    
+    }           
 }
 
 
@@ -196,8 +258,8 @@
                 width: 40%;
             }
         }    
-        header {
-            nav {
+        .header_acc {
+            .nav_acc {
                 a {
                     img {
                         width: 30%;
@@ -253,8 +315,8 @@
                 width: 20%;
             }
         }    
-        header {
-            nav {
+        .header_acc {
+            .nav_acc {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
