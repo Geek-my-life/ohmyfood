@@ -1,5 +1,5 @@
 
-body {
+.menu_body {
     max-width: 738px;
     margin: auto;
     font-family: roboto-regular;
@@ -59,7 +59,7 @@ body {
             }
             .vert {
                 margin-top: 2%;
-                background-color: #99E2D0;
+                background-color: var(--checkbox);
                 height: 5px;
                 width: 50px;
             }
@@ -121,7 +121,7 @@ body {
                 }
                 .circle {
                     width: 0;
-                    background-color: #99E2D0;
+                    background-color: var(--checkbox);
                     border-radius: 0 20px 20px 0;
                     display: flex;
                     justify-content: center;
@@ -148,10 +148,10 @@ body {
                 color: white;
                 border-radius: 30px;
                 border-style: none;
-                background: linear-gradient(#FF79DA, #9356DC);
+                background: var(--gradient-color);
                 box-shadow: 2px 2px 2px 2px hsl(0, 0%, 83%, 0.5);
                 &:hover {
-                    background: linear-gradient(hsl(317, 100%, 84%), hsl(267, 66%, 70%));
+                    opacity: 0.8;
                     box-shadow: 2px 2px 2px 2px hsl(0, 0%, 83%, 1);
                 }
             }
@@ -189,7 +189,7 @@ body {
     }       
 }
 @media only screen and (min-width: 738px) {
-    body {
+    .menu_body {
         min-width: 738px;
         header {
             nav {
@@ -224,7 +224,7 @@ body {
     }
 }
 @media only screen and (min-width: 1000px) {
-    body {
+    .menu_body {
         min-width: 738px;
         header {
             nav {

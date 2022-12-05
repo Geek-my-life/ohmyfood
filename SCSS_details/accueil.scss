@@ -1,4 +1,4 @@
-body {
+.acc_body {
     max-width: 738px;
     margin: auto;
     font-family: roboto-regular;
@@ -21,7 +21,7 @@ body {
             animation: loadingbar 3s;
             width: 70%;
             height: 30px;
-            background: linear-gradient(#FF79DA, #9356DC);
+            background: var(--gradient-color);
         }    
     }
     main {
@@ -48,10 +48,10 @@ body {
                 color: white;
                 border-radius: 30px;
                 border-style: none;
-                background: linear-gradient(#FF79DA, #9356DC);
+                background: var(--gradient-color);
                 box-shadow: 2px 2px 2px 2px hsl(0, 0%, 83%, 0.5);
                 &:hover {
-                    background: linear-gradient(hsl(317, 100%, 84%), hsl(267, 66%, 70%));
+                    opacity: 0.8;
                     box-shadow: 2px 2px 2px 2px hsl(0, 0%, 83%, 1);
                 }
             }
@@ -134,7 +134,7 @@ body {
                         padding: 5px 10px;
                         position: absolute;
                         transform: translate(240%,-550%);
-                        background-color: #99E2D0;
+                        background-color: var(--new-color);
                         font-size: 20px;
                         font-family: roboto-regular;
                     }
@@ -188,7 +188,7 @@ body {
 
 
 @media only screen and (min-width: 738px) {
-    body {
+    .acc_body {
         max-width: 1000px;
         .open {
             width: 100%;
@@ -244,7 +244,7 @@ body {
     
 }
 @media only screen and (min-width: 1000px) {
-    body {
+    .acc_body {
         padding: 0 10px;
         max-width: 1400px;
         .open {
@@ -318,7 +318,7 @@ body {
     
 }
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-    body {
+    .acc_body {
         main {
             .block {
                 .restocard {

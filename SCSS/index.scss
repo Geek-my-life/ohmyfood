@@ -12,9 +12,9 @@ li {
 a {
     text-decoration: none;
 }
+@import "../scss_details/var.scss";
 @import "../scss_details/font.scss";
 @import "../scss_details/animation.scss";
-@import "../scss_details/accueil.scss";
 @import "../scss_details/headerfooter.scss";
+@import "../scss_details/accueil.scss";
 @import "../scss_details/menu.scss";
-
