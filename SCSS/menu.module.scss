@@ -8,11 +8,12 @@
             a {
                 padding: 3% 0;
                 display: flex;
+                position: relative;
                 justify-content: center;
                 align-items: center;
                 i {
                     position: absolute;
-                    transform: translateX(-400%);
+                    left: 5%;
                     width: 10%;
                     font-size: 24px;
                     color: black;
@@ -273,6 +274,20 @@
     .menu_body {
         background-color: hsl(0, 0%, 83%, 0.2);
         max-width: 1400px;
+        .menu_head {
+            .menu_nav {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    justify-content: flex-start;
+                    img {
+                        width: 50%;
+                        margin: 0px;
+                    }
+                }
+            }        
+        }
         main {
             max-width: 738px;
             margin: auto;

@@ -200,6 +200,7 @@ a {
   display: flex;
   flex-wrap: nowrap;
   height: 80px;
+  position: relative;
 }
 .acc_body main .block .list h6 {
   display: flex;
@@ -213,7 +214,8 @@ a {
   background-color: #9356DC;
   border-radius: 50%;
   position: absolute;
-  transform: translateY(65%);
+  top: 50%;
+  transform: translateY(-50%);
 }
 .acc_body main .block .list .listdetail {
   margin: 0 0 0 5%;
@@ -253,6 +255,7 @@ a {
   background-color: hsla(0deg, 0%, 83%, 0.1);
   border-radius: 20px;
   box-shadow: 2px 2px 2px 2px hsla(0deg, 0%, 83%, 0.4);
+  position: relative;
 }
 .acc_body main .block .restocard .resto img {
   border-radius: 20px 20px 0 0;
@@ -264,13 +267,15 @@ a {
   color: black;
   padding: 5px 10px;
   position: absolute;
-  transform: translate(240%, -550%);
+  right: 5%;
+  top: 5%;
   background-color: #99E2D0;
   font-size: 20px;
   font-family: roboto-regular;
 }
 .acc_body main .block .restocard .resto .restotxt {
   margin: 5px 10px;
+  position: relative;
 }
 .acc_body main .block .restocard .resto .restotxt h4 {
   font-size: 22px;
@@ -280,8 +285,15 @@ a {
   font-size: 22px;
   color: black;
 }
+.acc_body main .block .restocard .resto .restotxt .restocheck {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
 .acc_body main .block .restocard .resto .restotxt .restocheck input {
   display: none;
+  position: relative;
 }
 .acc_body main .block .restocard .resto .restotxt .restocheck input:checked + .check i {
   background-clip: border-box;
@@ -291,10 +303,12 @@ a {
   animation: degrade 2s forwards;
 }
 .acc_body main .block .restocard .resto .restotxt .restocheck .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 40px;
   position: relative;
-  transform: translate(700%, -100%);
 }
 .acc_body main .block .restocard .resto .restotxt .restocheck .check i {
   font-size: 26px;
@@ -357,7 +371,7 @@ a {
     font-size: 18px;
   }
   .acc_body main .block .list h6 {
-    transform: translate(65%, 65%);
+    left: 2.5%;
   }
   .acc_body main .block .restocard {
     display: flex;
@@ -409,24 +423,13 @@ a {
     width: 30%;
   }
   .acc_body main .block .list h6 {
-    transform: translateY(65%);
+    left: 1.5%;
   }
   .acc_body main .block .restocard .resto img {
     object-fit: cover;
   }
-  .acc_body main .block .restocard .resto h5 {
-    transform: translate(500%, -550%);
-  }
-  .acc_body main .block .restocard .resto .restotxt .restocheck .check {
-    transform: translate(1300%, -100%);
-  }
   .acc_body footer img {
     width: 20%;
-  }
-}
-@media only screen and (min-width: 1000px) and (max-width: 1400px) {
-  .acc_body main .block .restocard .resto h5 {
-    transform: translate(300%, -550%);
   }
 }
 .menu_body {
@@ -437,12 +440,13 @@ a {
 .menu_body .menu_head .menu_nav a {
   padding: 3% 0;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
 .menu_body .menu_head .menu_nav a i {
   position: absolute;
-  transform: translateX(-400%);
+  left: 5%;
   width: 10%;
   font-size: 24px;
   color: black;
@@ -986,6 +990,18 @@ a {
   .menu_body {
     background-color: hsla(0deg, 0%, 83%, 0.2);
     max-width: 1400px;
+  }
+  .menu_body .menu_head .menu_nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu_body .menu_head .menu_nav a {
+    justify-content: flex-start;
+  }
+  .menu_body .menu_head .menu_nav a img {
+    width: 50%;
+    margin: 0px;
   }
   .menu_body main {
     max-width: 738px;
