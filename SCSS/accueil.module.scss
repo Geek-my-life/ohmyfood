@@ -3,7 +3,7 @@
     margin: auto;
     font-family: roboto-regular;
     .open {
-        animation: open 3s forwards;
+        animation: open 2000ms forwards;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -18,7 +18,7 @@
         }
         .loadbar {
             margin-top: 20px;
-            animation: loadingbar 3s;
+            animation: loadingbar 1500ms;
             width: 70%;
             height: 30px;
             background: $gradient-color;
