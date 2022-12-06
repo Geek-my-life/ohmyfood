@@ -78,7 +78,7 @@
                     font-size: 20px;
                     width: 35px;
                     height: 35px;
-                    background-color: #9356DC;
+                    background-color: $background_pastille;
                     border-radius: 50%;
                     position: absolute;
                     top: 50%;
@@ -109,7 +109,7 @@
                     }
                     &:hover {
                         background-color: hsl(267, 66%, 60%, 0.2);
-                        color: #9356DC;
+                        color: $background_pastille;
    
                     }
                 }   
