@@ -3,33 +3,6 @@
     max-width: 738px;
     margin: auto;
     font-family: roboto-regular;
-    .menu_head {
-        .menu_nav {
-            a {
-                padding: 3% 0;
-                display: flex;
-                position: relative;
-                justify-content: center;
-                align-items: center;
-                i {
-                    position: absolute;
-                    left: 5%;
-                    width: 10%;
-                    font-size: 24px;
-                    color: black;
-                }
-                img {
-                    box-shadow: 1px 1px 1px 1px hsl(0, 0%, 83%, 0.2);
-                    display: flex;
-                    justify-content: center;
-                    width: 50%;
-                }
-            }
-            .acceuil {
-                display: none;
-            }        
-        }    
-    }    
     main {
         .banniere_menu {
             height: 240px;
@@ -184,68 +157,10 @@
             }
         }
     }
-    footer {
-        background-color: hsl(0, 0%, 0%, 0.7);
-        margin-top: 30px;
-        padding: 40px 4%;
-        img {
-            width: 40%;
-        }
-        .footmenu {
-            padding: 20px 0px;
-            line-height: 30px;
-            a {
-                font-size: 20px;
-                color: white;
-            }           
-            .foottxt {
-                display: flex;
-                justify-content: left;
-                align-items: center;
-                i {
-                    width: 30px;
-                    font-size: 20px;
-                    color: white;
-                }
-                a {
-                    font-size: 20px;
-                    color: white;
-                }    
-            }
-        }    
-    }       
     }
 @media only screen and (min-width: 738px) {
     .menu_body {
         min-width: 738px;
-        .menu_head {
-            .menu_nav {
-                display: flex;
-                justify-content: space-between;
-                a {
-                    padding: 3% 0;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    i {
-                        display: none;
-                    }
-                    img {
-                        justify-content: flex-start;
-                        width: 40%;
-                        box-shadow: 1px 1px 1px 1px hsl(0, 0%, 83%, 0);
-                    }
-                }  
-                .acceuil {
-                    display: flex;
-                    color: black;
-                    &:hover {
-                        color: $checkbox;
-                    }
-                }  
-                            
-            }    
-        }  
         main {
             .banniere_menu {
                 height: 400px;
@@ -263,35 +178,29 @@
                 }
             }
         }  
-        footer {
-            img {
-                width: 20%;
-            }               
-    }
     }       
 }
 @media only screen and (min-width: 1000px) {
     .menu_body {
-        background-color: hsl(0, 0%, 83%, 0.2);
         max-width: 1400px;
-        .menu_head {
-            .menu_nav {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                a {
-                    justify-content: flex-start;
-                    img {
-                        width: 50%;
-                        margin: 0px;
-                    }
-                }
-            }        
-        }
+        padding: 0 10px 0 10px;
         main {
             max-width: 738px;
             margin: auto;
-            background-color: white;
-        }  
+            background-color: hsl(0, 22%, 96%);
+            .banniere_menu {
+                .blanc {
+                    background-color: hsl(0, 22%, 96%);
+                }
+            }
+            .menu {
+                .menucheck {
+                    background-color: white;
+                }
+            }
+            .button {
+                padding-bottom: 5%;
+            }
+            }  
     }
 }

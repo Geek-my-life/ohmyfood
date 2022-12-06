@@ -1,0 +1,44 @@
+footer {
+    background-color: hsl(0, 0%, 0%, 0.7);
+    margin-top: 30px;
+    padding: 40px 4%;
+    img {
+        width: 40%;
+    }
+    .footmenu {
+        padding: 20px 0px;
+        line-height: 30px;
+        a {
+            font-size: 20px;
+            color: white;
+        }           
+        .foottxt {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            i {
+                width: 30px;
+                font-size: 20px;
+                color: white;
+            }
+            a {
+                font-size: 20px;
+                color: white;
+            }    
+        }
+    }    
+}           
+@media only screen and (min-width: 738px) {
+    footer {
+        img {
+            width: 25%;
+        }
+    }       
+}
+@media only screen and (min-width: 1000px) {
+    footer {
+        img {
+            width: 20%;
+        }
+    }       
+}

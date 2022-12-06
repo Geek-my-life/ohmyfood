@@ -1,0 +1,118 @@
+.header_acc {
+    .nav_acc {
+        width: 100%;
+        a {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50%;
+                margin: auto;
+            }
+        }
+        .adress {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                i {
+                    font-size: 18px;
+                    width: 30%;
+                    text-align: right;
+                    padding: 2%;
+                }
+                input {
+                    background-color: hsl(0, 0%, 83%, 0);
+                    border-style: none;
+                    font-size: 18px;
+                    padding: 2%;
+                }
+        }
+    }        
+}    
+.menu_head {
+    .menu_nav {
+        a {
+            padding: 3% 0;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            i {
+                position: absolute;
+                left: 5%;
+                width: 10%;
+                font-size: 24px;
+                color: black;
+            }
+            img {
+                box-shadow: 1px 1px 1px 1px hsl(0, 0%, 83%, 0.2);
+                display: flex;
+                justify-content: center;
+                width: 50%;
+            }
+        }
+        .acceuil {
+            display: none;
+        }        
+    }    
+}    
+
+@media only screen and (min-width: 738px) {
+    .header_acc {
+        .nav_acc {
+            a {
+                img {
+                    width: 30%;
+                }
+            }
+            .adress {
+                margin-left: -20%;
+            }
+        }        
+    }
+    .menu_head {
+        .menu_nav {
+            display: flex;
+            justify-content: space-between;
+            a {
+                padding: 3% 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i {
+                    display: none;
+                }
+                img {
+                    justify-content: flex-start;
+                    width: 50%;
+                    box-shadow: 1px 1px 1px 1px hsl(0, 0%, 83%, 0);
+                }
+            }  
+            .acceuil {
+                display: flex;
+                color: black;
+                &:hover {
+                    color: $checkbox;
+                }
+            }  
+                        
+        }    
+    }  
+}
+@media only screen and (min-width: 1000px) {
+    .header_acc {
+        .nav_acc {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            a {
+                justify-content: flex-start;
+                img {
+                    width: 50%;
+                    margin: 0px;
+                }
+            }
+        }        
+    }
+}
