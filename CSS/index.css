@@ -105,7 +105,7 @@ a {
   font-family: roboto-regular;
 }
 .acc_body .open {
-  animation: open 3s forwards;
+  animation: open 2000ms forwards;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -121,7 +121,7 @@ a {
 }
 .acc_body .open .loadbar {
   margin-top: 20px;
-  animation: loadingbar 3s;
+  animation: loadingbar 1500ms;
   width: 70%;
   height: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -965,6 +965,7 @@ footer .footmenu .foottxt a {
   .menu_head .menu_nav .acceuil {
     display: flex;
     color: black;
+    font-size: 18px;
   }
   .menu_head .menu_nav .acceuil:hover {
     color: #99E2D0;
