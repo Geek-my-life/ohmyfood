@@ -911,7 +911,6 @@ footer .footmenu .foottxt a {
   padding: 2%;
 }
 .header_acc .nav_acc .adress input {
-  background-color: hsla(0deg, 0%, 83%, 0);
   border-style: none;
   font-size: 18px;
   padding: 2%;
@@ -932,13 +931,9 @@ footer .footmenu .foottxt a {
   color: black;
 }
 .menu_head .menu_nav a img {
-  box-shadow: 1px 1px 1px 1px hsla(0deg, 0%, 83%, 0.2);
   display: flex;
   justify-content: center;
   width: 50%;
-}
-.menu_head .menu_nav .acceuil {
-  display: none;
 }
 
 @media only screen and (min-width: 738px) {
@@ -948,31 +943,8 @@ footer .footmenu .foottxt a {
   .header_acc .nav_acc .adress {
     margin-left: -20%;
   }
-  .menu_head .menu_nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  .menu_head .menu_nav a {
-    padding: 3% 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .menu_head .menu_nav a i {
-    display: none;
-  }
   .menu_head .menu_nav a img {
-    justify-content: flex-start;
-    width: 50%;
-    box-shadow: 1px 1px 1px 1px hsla(0deg, 0%, 83%, 0);
-  }
-  .menu_head .menu_nav .acceuil {
-    display: flex;
-    color: black;
-    font-size: 18px;
-  }
-  .menu_head .menu_nav .acceuil:hover {
-    color: #99E2D0;
+    width: 30%;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -987,6 +959,9 @@ footer .footmenu .foottxt a {
   .header_acc .nav_acc a img {
     width: 50%;
     margin: 0px;
+  }
+  .menu_head .menu_nav a img {
+    width: 15%;
   }
 }
 

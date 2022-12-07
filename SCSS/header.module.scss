@@ -22,7 +22,6 @@
                     padding: 2%;
                 }
                 input {
-                    background-color: hsl(0, 0%, 83%, 0);
                     border-style: none;
                     font-size: 18px;
                     padding: 2%;
@@ -46,15 +45,11 @@
                 color: black;
             }
             img {
-                box-shadow: 1px 1px 1px 1px hsl(0, 0%, 83%, 0.2);
                 display: flex;
                 justify-content: center;
                 width: 50%;
             }
         }
-        .acceuil {
-            display: none;
-        }        
     }    
 }    
 
@@ -73,33 +68,13 @@
     }
     .menu_head {
         .menu_nav {
-            display: flex;
-            justify-content: space-between;
             a {
-                padding: 3% 0;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                i {
-                    display: none;
-                }
                 img {
-                    justify-content: flex-start;
-                    width: 50%;
-                    box-shadow: 1px 1px 1px 1px hsl(0, 0%, 83%, 0);
+                    width: 30%;
                 }
-            }  
-            .acceuil {
-                display: flex;
-                color: black;
-                font-size: 18px;
-                &:hover {
-                    color: $checkbox;
-                }
-            }  
-                        
+            }
         }    
-    }  
+        }  
 }
 @media only screen and (min-width: 1000px) {
     .header_acc {
@@ -116,4 +91,14 @@
             }
         }        
     }
+    .menu_head {
+        .menu_nav {
+            a {
+                img {
+                    width: 15%;
+                }
+            }
+        }    
+        }  
+
 }
