@@ -84,8 +84,12 @@
                     flex-direction: column;
                     justify-content: center;
                     h3 {
-                        font-size: 20px;
+                        width: 80%;
+                        font-size: 18px;
                         font-family: roboto-bold;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                     .menudetail {
                         display: flex;
