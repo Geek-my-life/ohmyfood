@@ -78,38 +78,6 @@
                 border-radius: 20px;
                 box-shadow: 2px 2px 2px 2px hsl(0, 0%, 83%, 0.5);
                 overflow: hidden;
-                .menutxt {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    h3 {
-                        width: 80%;
-                        font-size: 18px;
-                        font-family: roboto-bold;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                    .menudetail {
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        padding: 0 6% 0 0;
-                        h4 {
-                            margin: auto 0;
-                            font-size: 14px;
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                        }
-                        h5 {
-                            margin-left: 6%;
-                            font-size: 20px;
-                            font-family: roboto-bold;
-                        }
-                    }           
-                }
                 input {
                     display: none;
                     &:checked+.circle{
@@ -138,7 +106,40 @@
                     font-size: 30px;
                     padding: 3%;
                 }        
-            }   
+            }
+            .menutxt {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .h3 {
+                    width: 80%;
+                    font-size: 19px;
+                    font-family: roboto-bold;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .menudetail {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 0 6% 0 0;
+                    .h4 {
+                        margin: auto 0;
+                        font-size: 16px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .h5 {
+                        margin-left: 6%;
+                        font-size: 20px;
+                        font-family: roboto-bold;
+                    }
+                }           
+            }
+
         }
         .button {
             margin: 5% auto;
