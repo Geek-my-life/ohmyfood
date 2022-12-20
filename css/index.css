@@ -72,24 +72,6 @@ a {
     -webkit-text-stroke: 0px black;
   }
 }
-@keyframes degrade {
-  0% {
-    opacity: 0;
-    background: linear-gradient(#FF79DA, #9356DC);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0px black;
-  }
-  100% {
-    opacity: 100%;
-    background: linear-gradient(#FF79DA, #9356DC);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0px black;
-  }
-}
 @keyframes fadein {
   from {
     transform: translateY(20%);
@@ -215,10 +197,57 @@ a {
   background-color: hsla(267deg, 66%, 60%, 0.2);
   color: #9356DC;
 }
-.acc_body main .block .restocard a {
+.acc_body main .block .restocard .restocardlien {
+  position: relative;
+}
+.acc_body main .block .restocard .restocardlien h5 {
+  font-weight: normal;
+  color: black;
+  padding: 5px 10px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #99E2D0;
+  font-size: 20px;
+  font-family: roboto-regular;
+}
+.acc_body main .block .restocard .restocardlien .restocheck {
+  position: absolute;
+  top: 82%;
+  transform: translateY(-50%);
+  right: 5%;
+}
+.acc_body main .block .restocard .restocardlien .restocheck input {
+  display: none;
+  position: relative;
+}
+.acc_body main .block .restocard .restocardlien .restocheck input:checked + .check i {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px black;
+  animation: degrade 2s forwards;
+}
+.acc_body main .block .restocard .restocardlien .restocheck .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+.acc_body main .block .restocard .restocardlien .restocheck .check i {
+  font-size: 26px;
+  -webkit-text-stroke: 1px black;
+  background-color: white;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.acc_body main .block .restocard .restocardlien a {
   border-radius: 30px;
 }
-.acc_body main .block .restocard .resto {
+.acc_body main .block .restocard .restocardlien .resto {
   margin: 20px 0;
   width: 100%;
   height: 280px;
@@ -227,66 +256,22 @@ a {
   box-shadow: 2px 2px 2px 2px hsla(0deg, 0%, 83%, 0.4);
   position: relative;
 }
-.acc_body main .block .restocard .resto img {
+.acc_body main .block .restocard .restocardlien .resto img {
   border-radius: 20px 20px 0 0;
   width: 100%;
   height: 200px;
 }
-.acc_body main .block .restocard .resto h5 {
-  font-weight: normal;
-  color: black;
-  padding: 5px 10px;
-  position: absolute;
-  right: 5%;
-  top: 5%;
-  background-color: #99E2D0;
-  font-size: 20px;
-  font-family: roboto-regular;
-}
-.acc_body main .block .restocard .resto .restotxt {
+.acc_body main .block .restocard .restocardlien .resto .restotxt {
   margin: 5px 10px;
   position: relative;
 }
-.acc_body main .block .restocard .resto .restotxt h4 {
+.acc_body main .block .restocard .restocardlien .resto .restotxt h4 {
   font-size: 22px;
   color: black;
 }
-.acc_body main .block .restocard .resto .restotxt p {
+.acc_body main .block .restocard .restocardlien .resto .restotxt p {
   font-size: 22px;
   color: black;
-}
-.acc_body main .block .restocard .resto .restotxt .restocheck {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-}
-.acc_body main .block .restocard .resto .restotxt .restocheck input {
-  display: none;
-  position: relative;
-}
-.acc_body main .block .restocard .resto .restotxt .restocheck input:checked + .check i {
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0px black;
-  animation: degrade 2s forwards;
-}
-.acc_body main .block .restocard .resto .restotxt .restocheck .check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 40px;
-  position: relative;
-}
-.acc_body main .block .restocard .resto .restotxt .restocheck .check i {
-  font-size: 26px;
-  -webkit-text-stroke: 1px black;
-  background-color: white;
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (min-width: 738px) {
@@ -313,8 +298,12 @@ a {
     align-items: center;
     justify-content: space-between;
   }
-  .acc_body main .block .restocard a {
+  .acc_body main .block .restocard .restocardlien {
     width: 45%;
+  }
+  .acc_body main .block .restocard .restocardlien .restocheck {
+    position: absolute;
+    top: 80%;
   }
 }
 @media only screen and (min-width: 1000px) {
